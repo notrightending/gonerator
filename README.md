@@ -47,7 +47,7 @@ func (api *MyAPI) CreateUser(ctx context.Context, params CreateUserParams) (*Use
 ./gonerator input.go output.go
 ```
 
-5. Use the generated handlers in your main application.
+6. Use the generated handlers in your main application.
 
 ## Validation Tags
 

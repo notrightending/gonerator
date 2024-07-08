@@ -33,7 +33,15 @@ func (api *MyAPI) CreateUser(ctx context.Context, params CreateUserParams) (*Use
 }
 ```
 
-4. Run the generator:
+4. Set up environment variables for authentication:
+   For each API that requires authentication, set an environment variable with the appropriate key. For example:
+   ```
+   export MY_API_KEY="your_secret_key_here"
+   export OTHER_API_KEY="another_secret_key_here"
+   ```
+   Make sure these environment variable names match the `auth_env_key` specified in your API definitions.
+
+5. Run the generator:
 
 ```
 ./gonerator input.go output.go

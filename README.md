@@ -82,8 +82,6 @@ type ApiError struct {
 
 ## Testing
 
-If you're feeling ambitious
-
 ```
 go test ./test -v
 ```
